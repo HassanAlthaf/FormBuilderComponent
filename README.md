@@ -101,14 +101,12 @@ try {
     $radioButton->addField($maleField, "male");
     $radioButton->addField($femaleField, "female");
 } catch (\Exception $ex) {
-    echo "<pre>";
     print_r($ex);
-    echo "</pre>";
 }
 ```
 
-In the above code, you will notice a `$radioButton` variable. This is basically an instance of the HtmlRadioButton class. This class basically takes in an argument to define the name attribute of the radio button <select> element.
-Once that is defined, you need to define the actual radio buttons which are the <option> elements. So in this example, I have created two. The `$maleField` and the `$femaleField.` And then after defining them, I just add them to the `$radioButton` class. And all I have to do is add the `$radioButton` class onto the `$formBuilder.` That is it!
+In the above code, you will notice a `$radioButton` variable. This is basically an instance of the HtmlRadioButton class. This class basically takes in an argument to define the name attribute of the radio button `<select>` element.
+Once that is defined, you need to define the actual radio buttons which are the `<option>` elements. So in this example, I have created two. The `$maleField` and the `$femaleField.` And then after defining them, I just add them to the `$radioButton` class. And all I have to do is add the `$radioButton` class onto the `$formBuilder`. That is it!
 
 Last but not the least, drop down lists!
 
