@@ -1,7 +1,7 @@
 Form Builder Component
 ================
 
-#Contents
+##Contents
 
 [- What this is](#what-this-is)
 
@@ -11,13 +11,13 @@ Form Builder Component
 
 [- Credits](#credits)
 
-#What this is
+##What this is
 
 This is an easy-to-use Form Builder Component. It only is built currently for generating HTML form codes. But, I have
 built this in such a way, that it would be easy to make it generate code for form codes in other languages maybe
 because you are lazy to type all in yourself and want to do the job in an automated way.
 
-#How to use this
+##How to use this
 
 It's quite simple to do that! Firstly, you need to require this in your composer.json file like this by running:
 
@@ -161,10 +161,10 @@ echo $formBuilder->buildMarkup("testForm");
 
 That will remove it, simple as that.
 
-#How to contribute
+##How to contribute
 
 Do you want to contribute, but do not know how? Well, it is simple. You can always take a look at the pull requests, issues, etc and help others out. Or otherwise, if you want to contribute to the code base, you can always help me maintain the code base by adding more form elements, etc and optimizing the code time to time. Such helpers are highly welcome!
 
-#Credits
+##Credits
 
 Hassan Althaf - Main Developer <hassan [at] hassanalthaf [dot] com>
