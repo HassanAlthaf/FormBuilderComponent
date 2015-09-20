@@ -1,5 +1,12 @@
 # FormBuilderComponent
 
+#Contents
+
+[- What this is](#what-this-is)
+[- How to use this](#how-to-use-this)
+[- How to contribute](#how-to-contribute)
+[- Credits](#credits)
+
 #What this is
 
 This is an easy-to-use Form Builder Component. It only is built currently for generating HTML form codes. But, I have
@@ -149,3 +156,11 @@ echo $formBuilder->buildMarkup("testForm");
 ```
 
 That will remove it, simple as that.
+
+#How to contribute
+
+Do you want to contribute, but do not know how? Well, it is simple. You can always take a look at the pull requests, issues, etc and help others out. Or otherwise, if you want to contribute to the code base, you can always help me maintain the code base by adding more form elements, etc and optimizing the code time to time. Such helpers are highly welcome!
+
+#Credits
+
+Hassan Althaf - Main Developer <hassan [at] hassanalthaf [dot] com>
