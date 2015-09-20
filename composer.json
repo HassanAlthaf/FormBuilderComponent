@@ -1,0 +1,21 @@
+{
+  "name": "FormBuilder Component",
+  "description": "A FormBuilder Component ",
+  "keywords": ["PHP", "FormBuilder", "HTML"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hassan Althaf",
+      "email": "hassan@hassanalthaf.com",
+      "role": "Main Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "HassanAlthaf\\Form\\": "src/"
+    }
+  }
+}
