@@ -3,8 +3,11 @@
 #Contents
 
 [- What this is](#what-this-is)
+
 [- How to use this](#how-to-use-this)
+
 [- How to contribute](#how-to-contribute)
+
 [- Credits](#credits)
 
 #What this is
