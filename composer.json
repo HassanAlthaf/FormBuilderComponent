@@ -1,9 +1,13 @@
 {
   "name": "hassanalthaf/formbuildercomponent",
-  "description": "A FormBuilder Component ",
+  "description": "A simple and easy to use form builder component.",
   "keywords": [
     "PHP",
     "FormBuilder",
+    "Form Builder",
+    "Html forms",
+    "Hassan Althaf",
+    "Hassan ",
     "HTML"
   ],
   "license": "MIT",
