@@ -68,7 +68,7 @@ class HtmlForm implements Form
      */
     public function removeFormElement($elementName)
     {
-        if(isset($this->formElements[$elementName])) {
+        if (isset($this->formElements[$elementName])) {
             unset($this->formElements[$elementName]);
         }
     }

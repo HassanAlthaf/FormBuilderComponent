@@ -1,7 +1,11 @@
 {
-  "name": "FormBuilder Component",
+  "name": "FormBuilderComponent",
   "description": "A FormBuilder Component ",
-  "keywords": ["PHP", "FormBuilder", "HTML"],
+  "keywords": [
+    "PHP",
+    "FormBuilder",
+    "HTML"
+  ],
   "license": "MIT",
   "authors": [
     {

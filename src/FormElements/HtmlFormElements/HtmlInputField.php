@@ -16,7 +16,7 @@ class HtmlInputField extends HtmlFormElement
     {
         $htmlMarkup = "<" . self::HTML_TAG_NAME;
 
-        foreach($this->attributes as $attributeName => $attributeValue) {
+        foreach ($this->attributes as $attributeName => $attributeValue) {
             $htmlMarkup = $htmlMarkup . " " . $attributeName . "=\"" . $attributeValue . "\"";
         }
 

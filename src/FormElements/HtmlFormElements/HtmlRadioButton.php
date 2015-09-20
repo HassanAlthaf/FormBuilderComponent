@@ -2,8 +2,8 @@
 namespace HassanAlthaf\Form\FormElements\HtmlFormElements;
 
 use HassanAlthaf\Form\Exceptions\IncompatibleFieldException;
-use HassanAlthaf\Form\FormElements\HtmlFormElement;
 use HassanAlthaf\Form\FormElement;
+use HassanAlthaf\Form\FormElements\HtmlFormElement;
 
 class HtmlRadioButton extends HtmlFormElement
 {
@@ -26,7 +26,7 @@ class HtmlRadioButton extends HtmlFormElement
      */
     public function addField(FormElement $inputField, $name)
     {
-        if($inputField->getAttribute("type") == "radio") {
+        if ($inputField->getAttribute("type") == "radio") {
             $inputField->addAttribute("name", $this->elementName);
             $this->fields[$name] = $inputField;
         } else {
@@ -53,7 +53,7 @@ class HtmlRadioButton extends HtmlFormElement
     {
         $html = null;
 
-        foreach($this->fields as $fieldName => $field) {
+        foreach ($this->fields as $fieldName => $field) {
             $html = $html . $field->toHtml();
         }
 

@@ -17,19 +17,6 @@ class HtmlFormBuilder implements FormBuilder
     }
 
     /**
-     * @param Form $form - An object that implements the src interface.
-     * @param String $formName - A form nickname to uniquely identify a form
-     *
-     * Stores a form model to the $forms array.
-     */
-    public function addForm(Form $form, $formName)
-    {
-        if(is_object($form)) {
-            $this->forms[$formName] = $form;
-        }
-    }
-
-    /**
      * @param $formName
      *
      * Deletes a form from its uniquely identified key.
@@ -57,7 +44,7 @@ class HtmlFormBuilder implements FormBuilder
      */
     public function addFormAttribute($attributeName, $attributeValue)
     {
-        if(is_object($this->formUnderWork)) {
+        if (is_object($this->formUnderWork)) {
             $this->formUnderWork->addFormAttribute($attributeName, $attributeValue);
         }
     }
@@ -69,7 +56,7 @@ class HtmlFormBuilder implements FormBuilder
      */
     public function removeFormAttribute($attributeName)
     {
-        if(is_object($this->formUnderWork)) {
+        if (is_object($this->formUnderWork)) {
             $this->formUnderWork->removeFormAttribute($attributeName);
         }
     }
@@ -83,6 +70,19 @@ class HtmlFormBuilder implements FormBuilder
     {
         $this->addForm($this->formUnderWork, $formName);
         $this->formUnderWork = null;
+    }
+
+    /**
+     * @param Form $form - An object that implements the src interface.
+     * @param String $formName - A form nickname to uniquely identify a form
+     *
+     * Stores a form model to the $forms array.
+     */
+    public function addForm(Form $form, $formName)
+    {
+        if (is_object($form)) {
+            $this->forms[$formName] = $form;
+        }
     }
 
     /**
@@ -126,11 +126,11 @@ class HtmlFormBuilder implements FormBuilder
     {
         $form = null;
 
-        if($name != null) {
+        if ($name != null) {
             $form = $this->forms[$name];
         }
 
-        if($form instanceof Form) {
+        if ($form instanceof Form) {
             $markup = "<form";
 
             foreach ($form->getFormAttributes() as $attributeName => $attributeValue) {

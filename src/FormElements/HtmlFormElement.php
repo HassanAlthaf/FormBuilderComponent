@@ -40,7 +40,7 @@ abstract class HtmlFormElement implements \HassanAlthaf\Form\FormElement
      */
     public function getAttribute($attributeName)
     {
-        if(isset($this->attributes[$attributeName])) {
+        if (isset($this->attributes[$attributeName])) {
             return $this->attributes[$attributeName];
         }
 

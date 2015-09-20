@@ -34,11 +34,11 @@ class HtmlButton extends HtmlFormElement
     {
         $htmlMarkup = "<" . self::HTML_TAG_NAME;
 
-        foreach($this->attributes as $attributeName => $attributeValue) {
+        foreach ($this->attributes as $attributeName => $attributeValue) {
             $htmlMarkup = $htmlMarkup . " " . $attributeName . "=\"" . $attributeValue . "\"";
         }
 
-        $htmlMarkup = $htmlMarkup . ">" . $this->buttonDisplayName . "</" . self::HTML_TAG_NAME .  ">";
+        $htmlMarkup = $htmlMarkup . ">" . $this->buttonDisplayName . "</" . self::HTML_TAG_NAME . ">";
 
         return $htmlMarkup;
     }

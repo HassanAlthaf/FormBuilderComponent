@@ -18,7 +18,7 @@ class HtmlDropDownList extends HtmlFormElement
      */
     public function addListElement(FormElement $listElement, $name)
     {
-        if(is_object($listElement)) {
+        if (is_object($listElement)) {
             $this->listElements[$name] = $listElement;
         }
     }
@@ -30,7 +30,7 @@ class HtmlDropDownList extends HtmlFormElement
      */
     public function removeListElement($name)
     {
-        if(isset($this->listElements[$name])) {
+        if (isset($this->listElements[$name])) {
             unset($this->listElements[$name]);
         }
     }
@@ -44,13 +44,13 @@ class HtmlDropDownList extends HtmlFormElement
     {
         $htmlMarkup = "<" . self::HTML_TAG_NAME;
 
-        foreach($this->attributes as $attributeName => $attributeValue) {
+        foreach ($this->attributes as $attributeName => $attributeValue) {
             $htmlMarkup = $htmlMarkup . " " . $attributeName . "=\"" . $attributeValue . "\"";
         }
 
         $htmlMarkup = $htmlMarkup . ">";
 
-        foreach($this->listElements as $listName => $listElement) {
+        foreach ($this->listElements as $listName => $listElement) {
             $htmlMarkup = $htmlMarkup . $listElement->toHtml();
         }
 
